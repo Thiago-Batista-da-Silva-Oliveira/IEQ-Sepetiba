@@ -1,0 +1,495 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89.9vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)),url(./AboutImg.jpg);
+    background-position: left;
+    background-size: cover;
+    color: white;
+    transition:  0.5s ease;
+   
+}
+
+.choose{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  
+   
+   margin-bottom: 50px;
+   transform: translateY(-50%);
+   transition:  0.5s ease;
+   
+    
+}
+
+/*
+.choose{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    transform: translateY(-50%);
+    transition:  0.5s ease;
+    
+} */
+
+.btn{
+    margin-left: 30px;
+    margin-bottom: 200px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 35px;
+    border-radius: 5px;
+    background-color:red;
+    color: white;
+    padding: 15px;
+    transition:  0.5s ease;
+}
+
+.btn:hover{
+    animation: bounce 1s
+}
+
+.close-group{
+    display: none;
+}
+
+.close-location{
+    display: none;
+}
+
+.close-about{
+    display: none;
+}
+
+.teste{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition:  0.5s ease;
+}
+
+.Info-sobre{
+   position: absolute;
+   top: 20px;
+   transition:  0.5s ease;
+}
+
+.about{
+    margin-top: -20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: gray;
+    height: 480px;
+    width: 800px;
+    transition:  0.5s ease;
+    background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(IEQFoto.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.group{
+    border: 1px solid black;
+    border-radius: 5px;
+    background: gray;
+    height: 100%;
+    width: 800px;
+    transition:  0.5s ease;
+    
+}
+
+.location{
+    border: 1px solid black;
+    border-radius: 5px;
+    background: gray;
+    height: 100%;
+    width: 800px;
+    transition:  0.5s ease;
+    position: relative;
+}
+
+.location h3{
+ font-size: 20px;
+}
+
+.location p{
+    font-size: 18px;
+}
+.adress{
+    margin-left:20px ;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+}
+
+.maps{
+    text-decoration: none;
+    color: white;
+    margin-top: 250px;
+}
+
+.location-img-container{
+    height: 220px;
+    width: 220px;
+    position: absolute;
+    top: 35%;
+    right: 35%;
+   
+}
+
+.location-img-container img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.cars-app{
+    margin-top: 20px;
+    
+}
+
+.fa-map-marker-alt{
+ font-size: 20px;
+ color: yellow;
+}
+
+.adress p{
+    color: white;
+}
+
+.adress h3{
+    color: black;
+}
+.cards h1{
+    color: black;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition:  0.5s ease;
+
+}
+
+.about-h2{
+    color: red;
+    
+    margin-bottom: 5px
+}
+
+.p-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-container p {
+    margin-top: 3px
+}
+
+.p-container h3{
+    color: red;
+}
+
+.Name{
+    color: white;
+    font-size: 20px;
+}
+
+.church-img-container{
+    height: 220px;
+    width: 220px;
+   
+}
+
+.church-img{
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+.fa-question-circle{
+    animation:fa-blink 3s infinite;
+    cursor: pointer;
+}
+
+.cells-explanation-close{
+    display: none;
+}
+
+
+
+.cells-explanation p{
+ font-size: 25px;
+}
+.our-cells{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.btn-cells{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color:red;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.btn-cells:hover{
+    animation: bounce 1s
+
+}
+
+.active{
+  opacity: 0.5;
+}
+@keyframes fa-blink {
+    100% { color: rgb(170, 170, 2); }
+    50% { color: rgb(255, 255, 155) ; }
+    0% {  color: yellow; }
+}
+.fa-blink {
+  -webkit-animation: fa-blink .75s linear infinite;
+  -moz-animation: fa-blink .75s linear infinite;
+  -ms-animation: fa-blink .75s linear infinite;
+  -o-animation: fa-blink .75s linear infinite;
+  animation: fa-blink .75s linear infinite;
+}
+
+@keyframes bounce{
+    0%, 20%, 60%, 100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40%{
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80%{
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+
+@media (max-width: 960px){
+     
+    .container{
+        background-position: center;
+    }
+    .what-are-cell h1{
+        font-size: 13px
+    }
+  .btn{
+      margin-bottom: 80px;
+      margin-left: 15px;
+      padding: 10px;
+      font-size: 25px;
+  }
+  .about{
+      margin-top: 0;
+      height: 100%;
+      width: 300px;
+      transition:  0.5s ease-in-out;
+  }
+  
+  .group{
+    height: 100%;
+    width: 300px;
+    transition:  0.5s ease-in-out;
+}
+
+.location{
+    
+    border: 1px solid black;
+    border-radius: 5px;
+    background: gray;
+    height: 100%;
+    width: 300px;
+    transition:  0.5s ease;
+}
+
+.teste{
+    margin-top: -230px;
+}
+  .choose{
+      margin-bottom:200px;
+      transition:  0.5s ease-in-out;
+      transform: translateY(-80%);
+  }
+
+  .church-img-container{
+    height: 150px;
+    width: 150px;
+}
+.p-container p{
+    font-size: 14px
+}
+
+.cells-explanation p{
+    font-size: 20px;
+   }
+
+   .btn-cells{
+   
+    padding: 10px;
+    font-size: 15px;
+}  
+.church-img{
+    margin-top: 15px;
+    height: 80%;
+    width: 80%;
+    border-radius: 5px;
+    
+}
+
+.location-img-container{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    right: 25%;
+}
+.maps{
+    text-decoration: none;
+    color: white;
+    margin-top: 200px;
+}
+
+}
+
+@media (max-width: 720px){
+    .btn{
+        margin-bottom: 80px;
+        margin-left: 15px;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .what-are-cell h1{
+        font-size: 13px
+    }
+}
+
+@media (max-height: 550px){
+    .about{
+        font-size: 12px;
+        margin-top: -35px;
+        height: 270;
+        width: 300px;
+        transition:  0.5s ease-in-out;
+    }
+
+    .location{
+        font-size: 12px;
+        margin-top: -35px;
+        height: 250px;
+        width: 300px;
+        transition:  0.5s ease-in-out;
+    }
+
+    .group{
+        font-size: 12px;
+        margin-top: -35px;
+        height: 100%;
+    }
+    
+    .maps{
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .location img{
+         display: none;
+    }
+    
+    .about img{
+       width: 70px;
+       height: 70px;
+       margin-top: -3px;
+       margin-left: 35px;
+    }
+    
+    .our-cells{
+        
+        margin-top: -10px;
+        
+    }
+
+    .our-cells button{
+         padding: 8px;
+         font-size: 13px;
+    }
+
+    .choose{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        height: 30px;
+       
+    }
+
+    /*
+     display: flex;
+        align-items: center;
+        justify-content:center;
+        height: 30px;
+        margin-bottom: 120px;
+        transition:  0.5s ease;
+     */
+    
+}
+
+@media (max-height: 400px){
+    .teste{
+        margin-top: 0px;
+    }
+    .about{
+        font-size: 12px;
+        margin-top: -35px;
+        height: 240px;
+        width: 250px;
+        transition:  0.5s ease-in-out;
+    }
+    .about img{
+      display: none;
+     }
+    
+     .p-container p{
+         font-size: 11px
+     }
+
+     
+     .cells-explanation p{
+          font-size: 16px;
+     }
+
+     .cells-explanation button{
+         margin-top: 5px;
+     }
+
+   
+        
+    
+}

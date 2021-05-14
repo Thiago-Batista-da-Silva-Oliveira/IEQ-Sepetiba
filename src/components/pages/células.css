@@ -1,0 +1,385 @@
+.células-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89.9vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)),url(./Bible.jpg);
+    background-position: left;
+    background-size: cover;
+    color: white;
+    transition:  0.5s ease;
+    position: relative;
+}
+
+
+
+
+
+/*
+.células-container .choose{
+    
+ position: absolute;
+}
+*/
+.kids-section{
+    height: 480px;
+    width: 800px;
+    margin-top:  -20px;
+    background-color: gray;
+    font-size: 25px;
+}
+
+.kids-section h1{
+    text-align: center;
+}
+
+.kids-section ul{
+    margin-left: 30px;
+}
+
+.teens-section{
+    height: 480px;
+    width: 800px;
+    margin-top:  -20px;
+    background-color: gray;
+    
+}
+.teens-section h1{
+    text-align: center;
+}
+.teens-ul{
+    margin-left: 20px;
+}
+
+.womens-ul{
+    margin-left: 20px;
+}
+.mens-ul{
+    margin-left: 20px;
+}
+
+.jovens-img-container{
+ height: 300px;
+ width: 300px;
+ margin-left: 80px;
+ display: flex;
+ 
+}
+.jovens-img-container img{
+    height: 100%;
+    width: 100%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.crianças-img-container{
+    height: 300px;
+    width: 300px;
+    margin-left: 250px;
+    margin-top: -50px;
+   
+    
+    
+   }
+ .crianças-img-container img{
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+     
+   }
+.adults-section{
+    height: 480px;
+    width: 800px;
+    margin-top: -20px;
+    background-color: gray;
+}
+
+.womens-mens-sections{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px
+}
+.womens-img-container{
+    height: 250px;
+    width: 250px;
+    margin-right: 10px;
+}
+.womens-img-container img{
+    height: 100%;
+    width: 100%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.mens-img-container{
+    height: 250px;
+    width: 250px;
+  
+}
+.mens-img-container img{
+    height: 100%;
+    width: 100%;
+    margin-left: 150px;
+    cursor: pointer;
+}
+
+.womens-mens-sections h2{
+    color:  black;
+}
+
+.adults-section h1{
+    text-align: center;
+}
+
+.close-adults-section{
+    display: none;
+}
+.close-teens-section{
+    display: none;
+   }
+.close-kids-section{
+    display: none;
+}
+
+.modal{
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s ease-out;
+}
+.modal.open{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal img{
+   width: 550px;
+   height: 550px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   cursor: pointer;
+   
+}
+
+@media (max-width: 960px) {
+    .container{
+        background-position: center;
+    }
+    .kids-section{
+        height: 300px;
+        width: 300px;
+        margin-top: 0px;
+        font-size: 16px;
+    }
+
+    .teens-section{
+        height: 300px;
+        width: 300px;
+        margin-top: 0px;
+        background-color: gray;
+    }
+
+    .adults-section{
+        height: 300px;
+        width: 300px;
+        margin-top: 0px;
+        background-color: gray;
+        font-size: 12px;
+    }
+    .jovens-img-container{
+        height: 130px;
+        width: 130px;
+        margin-left: 0px;
+        
+    }
+
+    .jovens-img-container img{
+           width: 145px;
+          
+    }
+
+    .crianças-img-container{
+        height: 150px;
+        width: 150px;
+        margin-left: 120px;
+        
+        margin-top: -50px;
+    }
+
+    
+    .womens-img-container{
+        height: 100px;
+        width: 100px;
+        margin-left: 0px;
+    }
+    .mens-img-container{
+        height: 100px;
+        width: 100px;
+        margin-left: 0px;
+    }
+
+    .mens-img-container img{
+        height: 100%;
+        width: 100%;
+        margin-left: 40px;
+       
+    }
+
+    .womens-img-container img{
+        height: 100%;
+        width: 100%;
+        margin-left: 10px;
+        
+    }
+
+    .choose{
+        margin-bottom:230px;
+        transition:  0.5s ease-in-out;
+        transform: translateY(-80%);
+        
+    }
+
+    .modal img{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%)
+        
+     }
+}
+
+@media (max-width: 720px){
+ .btn{
+     font-size: 16px;
+ }
+}
+@media (max-height: 550px){
+   /* .kids-section{
+        font-size: 12px;
+        margin-top: -35px;
+        height: 200px;
+        width: 300px;
+        transition:  0.5s ease-in-out;
+    }
+
+    .teens-section{
+        font-size: 12px;
+        margin-top: -35px;
+        height: 200px;
+        width: 300px;
+        transition:  0.5s ease-in-out;
+    }
+
+    .adults-section{
+        font-size: 12px;
+        margin-top: -35px;
+        height: 300px;
+        width: 300px;
+        transition:  0.5s ease-in-out;
+    }
+
+    .jovens-img-container {
+      width: 80px;
+      height: 80px;
+ }
+
+ .crianças-img-container{
+    height: 110px;
+    width: 110px;
+    margin-left: 120px;
+    
+    margin-top: -50px;
+}
+    
+.mens-img-container img{
+    height: 110px;
+    width: 110px;
+ }
+
+ .womens-img-container img{
+    height: 110px;
+    width: 110px;
+ }
+   
+
+    .choose{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        height: 30px;
+        margin-bottom: 120px;
+        transition:  0.5s ease;
+        transform: translateY(-300%);
+    }
+
+    /*
+      display: flex;
+        align-items: center;
+        justify-content:center;
+        height: 30px;
+        margin-bottom: 120px;
+        transition:  0.5s ease;
+        transform: translateY(-300%);
+    */
+    
+} 
+
+@media (max-height: 400px){
+
+    .mens-img-container img{
+        display: none;
+     }
+    
+     .womens-img-container img{
+         display: none;
+     }
+    .choose{
+        transform: translateY(-50%);
+        
+    }
+
+    .crianças-img-container{
+        height: 100px;
+        width: 100px;
+        margin-left: 120px;
+        
+        margin-top: -50px;
+    }
+     
+    .jovens-img-container {
+        width: 50px;
+        height: 50px;
+   }
+
+   .kids-section{
+    font-size: 12px;
+    
+    height: 200px;
+    width: 300px;
+    transition:  0.5s ease-in-out;
+}
+
+.teens-section{
+    font-size: 12px;
+    
+    height: 200px;
+    width: 300px;
+    transition:  0.5s ease-in-out;
+}
+
+.adults-section{
+    font-size: 12px;
+    
+    height: 200px;
+    width: 300px;
+    transition:  0.5s ease-in-out;
+}
+}

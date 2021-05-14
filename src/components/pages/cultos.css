@@ -1,0 +1,194 @@
+.cultos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89.9vh;
+    height: 89.9vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)),url(./Bible.jpg);
+    background-position: left;
+    background-size: cover;
+    z-index: 1;
+    color: white;
+    transition:  0.5s ease;
+    position: relative;
+}
+
+
+.close-Dias{
+    display: none;
+}
+
+.Dias{
+    height: 480px;
+    width: 800px;
+    margin-top:  -20px;
+    background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(IEQFoto.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Dias h1{
+    text-align: center;
+}
+
+.close-Fotos{
+    display: none;
+}
+
+.Fotos{
+    height: 470px;
+    width: 790px;
+    margin-top:  -20px;
+    
+}
+
+.Fotos h1{
+    text-align: center;
+}
+
+.cultos-container .btn{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.slider {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 1;
+}
+
+.slider-img{
+    width: 800px;
+    height: 480px;
+    border-radius: 10px;
+    opacity: 1;
+    
+}
+
+.fa-arrow-circle-right{
+    position: absolute;
+    top: 45%;
+    right: 32px;
+    font-size: 3rem;
+    color: #000;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+   
+}
+
+.fa-arrow-circle-left{
+    position: absolute;
+    top: 45%;
+    left: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+   
+}
+
+.slide{
+    opacity: 0;
+    transition-duration: 1s ease;
+
+}
+
+.slide.activ{
+ opacity: 1;
+ transition-duration: 1s;
+ transform: scale(1.08);
+}
+
+.Dias-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.Dias-section p {
+    font-size: 30px;
+}
+
+@media (max-width: 960px){
+    .Dias{
+        height: 300px;
+        width: 300px;
+        margin-top: 0px;
+        font-size: 16px;
+    }
+
+    .Fotos{
+        height: 300px;
+        width: 300px;
+        margin-top: 0px;
+        font-size: 16px;
+    }
+
+    .slider-img{
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        
+    }
+    .fa-arrow-circle-right{
+        position: absolute;
+        top: 45%;
+        right: 20px;
+        font-size: 3rem;
+        color: #000;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+       
+    }
+    
+    .fa-arrow-circle-left{
+        position: absolute;
+        top: 45%;
+        left: 20px;
+        font-size: 3rem;
+        color: #000;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+       
+    }
+
+    .Dias-section p {
+        font-size: 13px;
+    }
+    
+}
+@media (max-height: 400px){
+    .Dias{
+        margin-top: -20px;
+        height: 240px;
+        width: 300px;
+        font-size: 16px;
+    }
+
+    .Fotos{
+        margin-top: -20px;
+        height: 240px;
+        width: 300px;
+        font-size: 16px;
+    }
+    .slider-img{
+        width: 300px;
+        height: 240px;
+        border-radius: 10px;
+        opacity: 1;
+    }
+   
+    
+    .Dias-section p {
+        font-size: 13px;
+    }
+}
